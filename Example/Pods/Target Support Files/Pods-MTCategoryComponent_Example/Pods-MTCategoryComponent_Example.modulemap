@@ -1,0 +1,6 @@
+framework module Pods_MTCategoryComponent_Example {
+  umbrella header "Pods-MTCategoryComponent_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

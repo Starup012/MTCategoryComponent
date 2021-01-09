@@ -1,0 +1,16 @@
+PODS:
+  - MTCategoryComponent (0.1.0)
+
+DEPENDENCIES:
+  - MTCategoryComponent (from `../`)
+
+EXTERNAL SOURCES:
+  MTCategoryComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MTCategoryComponent: aca407d36b9d06ea5fdc5a7246772d981393faad
+
+PODFILE CHECKSUM: 5bbb9cb352d7443aaffd5e5c765639cbf5660cdc
+
+COCOAPODS: 1.9.3

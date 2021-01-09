@@ -27,3 +27,4 @@ Tom, v2top1lyle@gmail.com
 ## License
 
 MTCategoryComponent is available under the MIT license. See the LICENSE file for more info.
+# MTCategoryComponent

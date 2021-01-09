@@ -1,0 +1,22 @@
+{
+  "name": "MTCategoryComponent",
+  "version": "0.1.0",
+  "summary": "A short description of MTCategoryComponent.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Tom/MTCategoryComponent",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Tom": "v2top1lyle@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Tom/MTCategoryComponent.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MTCategoryComponent/Classes/**/*"
+}
