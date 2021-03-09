@@ -30,13 +30,53 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MTCategoryComponent/Classes/**/*'
+  s.source_files = 'MTCategoryComponent/Classes/MTCategoryComponentHeader.h'
   
-  # s.resource_bundles = {
-  #   'MTCategoryComponent' => ['MTCategoryComponent/Assets/*.png']
-  # }
+  s.subspec 'Foundation' do |ss|
+    ss.ios.deployment_target = '9.0'
+    ss.source_files = 'MTCategoryComponent/Classes/Foundation/MTFoundationCategoryHeader.h'
+    ss.subspec 'Sources' do |sss|
+        sss.source_files = 'MTCategoryComponent/Classes/Foundation/Sources/*.{h,m}'
+     end
+    
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.subspec 'UIKit' do |ss|
+     ss.ios.deployment_target = '9.0'
+     ss.source_files = 'MTCategoryComponent/Classes/UIKit/MTUIKitExtensionHeader.h'
+
+     ss.subspec 'UIColor' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIColor/*.{h,m}'
+      end
+     ss.subspec 'UIControl' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIControl/*.{h,m}'
+      end
+     ss.subspec 'UIImageView' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIImageView/*.{h,m}'
+      end
+     ss.subspec 'UITableView' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UITableView/*.{h,m}'
+      end
+     ss.subspec 'UITextField' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UITextField/*.{h,m}'
+      end
+     ss.subspec 'UIView' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIView/*.{h,m}'
+         sss.dependency  'MTCategoryComponent/UIKit/UIColor'
+      end
+     
+     ss.subspec 'UIImage' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIImage/*.{h,m}'
+         sss.dependency  'MTCategoryComponent/UIKit/UIColor'
+         sss.dependency  'MTCategoryComponent/UIKit/UIView'
+      end
+     ss.subspec 'UIViewController' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIViewController/*.{h,m}'
+         sss.dependency  'MTCategoryComponent/UIKit/UIColor'
+         sss.dependency 'MBProgressHUD'
+         sss.dependency 'Toast'
+      end
+  end
+
+  
 end

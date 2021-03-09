@@ -1,22 +1,102 @@
 {
   "name": "MTCategoryComponent",
-  "version": "0.1.0",
-  "summary": "A short description of MTCategoryComponent.",
+  "version": "1.0.0",
+  "summary": "常用的Category封装自己习惯快速上手的方法.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Tom/MTCategoryComponent",
+  "homepage": "https://github.com/lyleLH/MTCategoryComponent",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Tom": "v2top1lyle@gmail.com"
+    "Major Tom": "v2top1lyle@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Tom/MTCategoryComponent.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/lyleLH/MTCategoryComponent.git",
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "MTCategoryComponent/Classes/**/*"
+  "source_files": "MTCategoryComponent/Classes/MTCategoryComponentHeader.h",
+  "subspecs": [
+    {
+      "name": "Foundation",
+      "platforms": {
+        "ios": "9.0"
+      },
+      "source_files": "MTCategoryComponent/Classes/Foundation/MTFoundationCategoryHeader.h",
+      "subspecs": [
+        {
+          "name": "Sources",
+          "source_files": "MTCategoryComponent/Classes/Foundation/Sources/*.{h,m}"
+        }
+      ]
+    },
+    {
+      "name": "UIKit",
+      "platforms": {
+        "ios": "9.0"
+      },
+      "source_files": "MTCategoryComponent/Classes/UIKit/MTUIKitExtensionHeader.h",
+      "subspecs": [
+        {
+          "name": "UIColor",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UIColor/*.{h,m}"
+        },
+        {
+          "name": "UIControl",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UIControl/*.{h,m}"
+        },
+        {
+          "name": "UIImageView",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UIImageView/*.{h,m}"
+        },
+        {
+          "name": "UITableView",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UITableView/*.{h,m}"
+        },
+        {
+          "name": "UITextField",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UITextField/*.{h,m}"
+        },
+        {
+          "name": "UIView",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UIView/*.{h,m}",
+          "dependencies": {
+            "MTCategoryComponent/UIKit/UIColor": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIImage",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UIImage/*.{h,m}",
+          "dependencies": {
+            "MTCategoryComponent/UIKit/UIColor": [
+
+            ],
+            "MTCategoryComponent/UIKit/UIView": [
+
+            ]
+          }
+        },
+        {
+          "name": "UIViewController",
+          "source_files": "MTCategoryComponent/Classes/UIKit/UIViewController/*.{h,m}",
+          "dependencies": {
+            "MTCategoryComponent/UIKit/UIColor": [
+
+            ],
+            "MBProgressHUD": [
+
+            ],
+            "Toast": [
+
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }

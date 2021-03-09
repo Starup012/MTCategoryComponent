@@ -1,7 +1,7 @@
 ///**
 /**
 Categoties
-Created by: Tom.Liu on 2021/1/8
+Created by: Tom.Liu on 2021/1/6
 Github : https://github.com/lyleLH
 
  	 * ⣿⣿⣿⣿⣿⣿⢟⣡⣴⣶⣶⣦⣌⡛⠟⣋⣩⣬⣭⣭⡛⢿⣿⣿⣿⣿
@@ -19,12 +19,16 @@ Github : https://github.com/lyleLH
 
 */
 
-#import <UIKit/UIKit.h>
+#ifndef MTFoundationCategoryHeader_h
+#define MTFoundationCategoryHeader_h
 
-NS_ASSUME_NONNULL_BEGIN
+#import "NSObject+MTExtension.h"
+#import "NSString+MTExtension.h"
+#import "NSData+MTExtension.h"
+#import "NSArray+MTExtension.h"
+#import "NSMutableArray+MTExtension.h"
+#import "NSDictionary+MTExtension.h"
+#import "NSMutableDictionary+MTExtension.h"
+#import "NSDate+MTExtension.h"
 
-@interface UIImage (MTExtension)
-+ (UIImage *)imageWithSize:(CGSize)size leftColor:(UIColor *)leftColor rightColor:(UIColor *)rightColor ;
-@end
-
-NS_ASSUME_NONNULL_END
+#endif /* MTFoundationCategoryHeader_h */
