@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTCategoryComponent'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = '常用的Category封装自己习惯快速上手的方法.'
 
 # This description is used to generate tags and improve search results.
