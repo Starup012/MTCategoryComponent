@@ -76,6 +76,11 @@ TODO: Add long description of the pod here.
          sss.dependency 'MBProgressHUD'
          sss.dependency 'Toast'
       end
+    
+     ss.subspec 'UIResponder' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIResponder/*.{h,m}'
+      end
+      
   end
 
   
