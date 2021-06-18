@@ -52,6 +52,8 @@
 		B81CA0B2B5D78D01A87FAF7306D3858A /* NSArray+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FDCBD5D5BB4C7BADECA7CA881E6F25 /* NSArray+MTExtension.m */; };
 		B94158F44AD650862253310D235D559F /* MTUITextFieldExtensionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D0859B07FFBC2B5127A025549C76FA /* MTUITextFieldExtensionHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C123E4E9719B4D834864FF6FE74C08E7 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD8C616CCA089F8B93633F647B7D00B4 /* MBProgressHUD.framework */; };
+		C88717F5267C7C8C00E9D03C /* UIResponder+MTExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = C88717F3267C7C8C00E9D03C /* UIResponder+MTExtension.h */; };
+		C88717F6267C7C8C00E9D03C /* UIResponder+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C88717F4267C7C8C00E9D03C /* UIResponder+MTExtension.m */; };
 		CC2BF2C7711C2B9CD08787D26AE21024 /* NSData+MTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 652D89339DF3046894626CE82B84A775 /* NSData+MTExtension.m */; };
 		CF36803F51E27D49630234392B9A4C47 /* UIImageView+MTEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8B33466836E1434D0299D2BCE92597 /* UIImageView+MTEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF5D762B874D626ED869CCFC0D0778C9 /* MTCategoryComponent-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4EEFB15B4E15E5EB34250EB6D9999B5 /* MTCategoryComponent-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -115,7 +117,7 @@
 /* Begin PBXFileReference section */
 		02159ACDB0242D0ADB6E190FAA999DA7 /* Pods-MTCategoryComponent_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTCategoryComponent_Tests-Info.plist"; sourceTree = "<group>"; };
 		02FEA6373DBB0978790341BEA587AF12 /* Toast.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Toast.modulemap; sourceTree = "<group>"; };
-		08EDBB8F8361B3795CB10BB8CE946874 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		08EDBB8F8361B3795CB10BB8CE946874 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		09149277853F74C7211CE31A435555EF /* Pods-MTCategoryComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTCategoryComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0AF95EC87D6AF94FE5A7AFC93B0DDA50 /* NSDate+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSDate+MTExtension.h"; sourceTree = "<group>"; };
 		0B385511E23904E00626B3A8D3F5DA45 /* Pods-MTCategoryComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTCategoryComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +133,7 @@
 		2D841CC648811B7B755FF7E7BB44C8C8 /* MTUITableViewExtensionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTUITableViewExtensionHeader.h; path = MTCategoryComponent/Classes/UIKit/UITableView/MTUITableViewExtensionHeader.h; sourceTree = "<group>"; };
 		2FC92C3955A27F8CDE229CA7AE16B31E /* UIColor+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MTExtension.m"; path = "MTCategoryComponent/Classes/UIKit/UIColor/UIColor+MTExtension.m"; sourceTree = "<group>"; };
 		30F0E464E41849250F0183B34BE1113E /* MTFoundationCategoryHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTFoundationCategoryHeader.h; path = MTCategoryComponent/Classes/Foundation/MTFoundationCategoryHeader.h; sourceTree = "<group>"; };
-		3736CE39C740FCA15AC71261D1EC60D7 /* MTCategoryComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MTCategoryComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3736CE39C740FCA15AC71261D1EC60D7 /* MTCategoryComponent.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MTCategoryComponent.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3770B637442310A607841F6CE6CB8C2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3D31F09BEA99F26CB5058608EDEBA7B3 /* NSObject+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSObject+MTExtension.m"; sourceTree = "<group>"; };
 		3E2FADEAA124D69093095517D6EE9CCD /* Toast-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-dummy.m"; sourceTree = "<group>"; };
@@ -140,14 +142,14 @@
 		49A05945ADD87F7B918D5D4CCCF4419C /* UIColor+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MTExtension.h"; path = "MTCategoryComponent/Classes/UIKit/UIColor/UIColor+MTExtension.h"; sourceTree = "<group>"; };
 		49FC76C24ED7FDF0F6F2D7534E40B3E6 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
 		4A265FFD69C9ECF998EDCD0A0F2705E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		4A4B782B47814460D2CFDEBCC51C566F /* MTCategoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MTCategoryComponent.framework; path = MTCategoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A4B782B47814460D2CFDEBCC51C566F /* MTCategoryComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTCategoryComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2C9D28C91355E08E16C3FB33590F39 /* Toast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Toast.debug.xcconfig; sourceTree = "<group>"; };
 		4E96EB5D3A4F21642B5E4AB082539874 /* NSDictionary+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSDictionary+MTExtension.h"; sourceTree = "<group>"; };
 		55D0859B07FFBC2B5127A025549C76FA /* MTUITextFieldExtensionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTUITextFieldExtensionHeader.h; path = MTCategoryComponent/Classes/UIKit/UITextField/MTUITextFieldExtensionHeader.h; sourceTree = "<group>"; };
-		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast.framework; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E0AFD333353D71ACC2207149E879D6 /* Toast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C8F725D05541659ED1BC88253B1281 /* Pods-MTCategoryComponent_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MTCategoryComponent_Tests-umbrella.h"; sourceTree = "<group>"; };
 		583A3980F6DF2092C93BE70C991DBC64 /* UIImage+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MTExtension.m"; path = "MTCategoryComponent/Classes/UIKit/UIImage/UIImage+MTExtension.m"; sourceTree = "<group>"; };
-		59454C9B526A3537F4EB2C9898200770 /* Pods_MTCategoryComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTCategoryComponent_Example.framework; path = "Pods-MTCategoryComponent_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59454C9B526A3537F4EB2C9898200770 /* Pods_MTCategoryComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCategoryComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A438B1E0F2E00B00982022C6000E94A /* UIImageView+MTEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+MTEvent.m"; path = "MTCategoryComponent/Classes/UIKit/UIImageView/UIImageView+MTEvent.m"; sourceTree = "<group>"; };
 		5A72D350C840A962A2EE1DC457C0468B /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5DB86745BC530B0AB919AE8F27DDAECD /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
@@ -161,20 +163,20 @@
 		794B9AA9150D125B41608029EC6D490A /* Pods-MTCategoryComponent_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTCategoryComponent_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7B6D81568A37F28B934C7F94E1AA1380 /* NSString+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSString+MTExtension.m"; sourceTree = "<group>"; };
 		832D82E76785FB6317A8864FC3BAF26E /* Pods-MTCategoryComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MTCategoryComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		836A434DE98544868C825A3D5352472F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		836A434DE98544868C825A3D5352472F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		86EF72506A28D7BE74AFC2517D136F1D /* Pods-MTCategoryComponent_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MTCategoryComponent_Example-Info.plist"; sourceTree = "<group>"; };
 		886D99C7E77E324FB5217590E44948BF /* UIImage+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MTExtension.h"; path = "MTCategoryComponent/Classes/UIKit/UIImage/UIImage+MTExtension.h"; sourceTree = "<group>"; };
 		887268F35506831CD80CBBEA1EDBBC3C /* MTCategoryComponent-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MTCategoryComponent-Info.plist"; sourceTree = "<group>"; };
 		894AAAFFEC1724F6BF450672C007633F /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
 		8AD4B07E3C539B45DD228C309029ECB0 /* NSMutableArray+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSMutableArray+MTExtension.h"; sourceTree = "<group>"; };
 		8B0B88CE28ED7D83B4FFD67CFD0223EE /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
-		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA6F8565B4CF6E297730A5ECA7FD7C3 /* Pods-MTCategoryComponent_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MTCategoryComponent_Example.modulemap"; sourceTree = "<group>"; };
 		8EE6EC67361BBA9AF6B23E210EACE371 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		9413F0E70FC522C2F5C0ADC98F1CD440 /* Pods-MTCategoryComponent_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MTCategoryComponent_Tests-dummy.m"; sourceTree = "<group>"; };
 		9D3F62B8CCC8ED1FE146B46A10DAC3ED /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		9D537A9A1B2A17BC57DE63BB5BA565B2 /* NSMutableArray+MTExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+MTExtension.m"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSMutableArray+MTExtension.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A49A8B01729991D756D5CE47C5B0A20F /* Pods-MTCategoryComponent_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MTCategoryComponent_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A4EEFB15B4E15E5EB34250EB6D9999B5 /* MTCategoryComponent-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MTCategoryComponent-umbrella.h"; sourceTree = "<group>"; };
 		AC3C0E772B6BE868B9D964DF5640A14E /* NSData+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSData+MTExtension.h"; sourceTree = "<group>"; };
@@ -187,8 +189,10 @@
 		BFD15545903439CE06E8E73E59B99904 /* MTCategoryComponent-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MTCategoryComponent-dummy.m"; sourceTree = "<group>"; };
 		C151494F11F6E4479AA36BF965E7DCA8 /* Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Toast.h; path = "Toast-Framework/Toast.h"; sourceTree = "<group>"; };
 		C40AAAD766303BE30D82E528CDFAA18C /* Toast-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-prefix.pch"; sourceTree = "<group>"; };
-		C5B8E29BE52369D18953828C4E0DA963 /* Pods_MTCategoryComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MTCategoryComponent_Tests.framework; path = "Pods-MTCategoryComponent_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5B8E29BE52369D18953828C4E0DA963 /* Pods_MTCategoryComponent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCategoryComponent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A5362687B2221E1667BB7B78217FFE /* NSMutableDictionary+MTExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+MTExtension.h"; path = "MTCategoryComponent/Classes/Foundation/Sources/NSMutableDictionary+MTExtension.h"; sourceTree = "<group>"; };
+		C88717F3267C7C8C00E9D03C /* UIResponder+MTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIResponder+MTExtension.h"; path = "MTCategoryComponent/Classes/UIKit/UIResponseder/UIResponder+MTExtension.h"; sourceTree = "<group>"; };
+		C88717F4267C7C8C00E9D03C /* UIResponder+MTExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+MTExtension.m"; path = "MTCategoryComponent/Classes/UIKit/UIResponseder/UIResponder+MTExtension.m"; sourceTree = "<group>"; };
 		D0A39E2D5DC0FD349AA0FCA037BF5079 /* MTUIViewExtensionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MTUIViewExtensionHeader.h; path = MTCategoryComponent/Classes/UIKit/UIView/MTUIViewExtensionHeader.h; sourceTree = "<group>"; };
 		D2F5F292A42C0D801FD7EF5A00ABD83E /* UIView+Toast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Toast/UIView+Toast.h"; sourceTree = "<group>"; };
 		D47655BD6B3D7D6DF21CF93F42B56DB6 /* Toast-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Info.plist"; sourceTree = "<group>"; };
@@ -414,7 +418,6 @@
 				5A72D350C840A962A2EE1DC457C0468B /* MBProgressHUD.m */,
 				AB6017669372C0178340F6A285C497BA /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -486,7 +489,6 @@
 				F55F78B654C8A8CF8A6C9484006A6C6A /* UIView+Toast.m */,
 				AA7CBFD25F35727133E3CA7167999916 /* Support Files */,
 			);
-			name = Toast;
 			path = Toast;
 			sourceTree = "<group>";
 		};
@@ -502,6 +504,8 @@
 				AF25D86C64470AD308FEA00E1400DEB7 /* UITextField */,
 				5E068F523A69F1B89C1641F3F0F02ED5 /* UIView */,
 				1639B794879D0BD3E3A0CE9986ECF715 /* UIViewController */,
+				C88717F3267C7C8C00E9D03C /* UIResponder+MTExtension.h */,
+				C88717F4267C7C8C00E9D03C /* UIResponder+MTExtension.m */,
 			);
 			name = UIKit;
 			sourceTree = "<group>";
@@ -573,6 +577,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88717F5267C7C8C00E9D03C /* UIResponder+MTExtension.h in Headers */,
 				CF5D762B874D626ED869CCFC0D0778C9 /* MTCategoryComponent-umbrella.h in Headers */,
 				AF5A0F7C4D7F7C7A0F9B03B86F32BFD7 /* MTCategoryComponentHeader.h in Headers */,
 				0A270E5A823ECBD92C6522F89FCE574D /* MTFoundationCategoryHeader.h in Headers */,
@@ -826,6 +831,7 @@
 			files = (
 				6D8D61A7C615F5659D81423C1DE53044 /* MTCategoryComponent-dummy.m in Sources */,
 				B81CA0B2B5D78D01A87FAF7306D3858A /* NSArray+MTExtension.m in Sources */,
+				C88717F6267C7C8C00E9D03C /* UIResponder+MTExtension.m in Sources */,
 				CC2BF2C7711C2B9CD08787D26AE21024 /* NSData+MTExtension.m in Sources */,
 				90B7060C01A43B81E3803D37D7499344 /* NSDate+MTExtension.m in Sources */,
 				3DB9335B2BF021E3F5C242F8058BDA2F /* NSDictionary+MTExtension.m in Sources */,
@@ -1300,8 +1306,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
