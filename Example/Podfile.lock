@@ -1,4 +1,6 @@
 PODS:
+  - LookinServer (1.0.2)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MTCategoryComponent (1.2.0):
     - MTCategoryComponent/Foundation (= 1.2.0)
@@ -26,6 +28,7 @@ PODS:
   - MTCategoryComponent/UIKit/UITableView (1.2.0)
   - MTCategoryComponent/UIKit/UITextField (1.2.0)
   - MTCategoryComponent/UIKit/UIView (1.2.0):
+    - Masonry
     - MTCategoryComponent/UIKit/UIColor
   - MTCategoryComponent/UIKit/UIViewController (1.2.0):
     - MBProgressHUD
@@ -34,10 +37,13 @@ PODS:
   - Toast (4.0.0)
 
 DEPENDENCIES:
+  - LookinServer (= 1.0.2)
   - MTCategoryComponent (from `../`)
 
 SPEC REPOS:
   trunk:
+    - LookinServer
+    - Masonry
     - MBProgressHUD
     - Toast
 
@@ -46,10 +52,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  LookinServer: d6874df8b58096c8d463817b6baaa3abc21d31f7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MTCategoryComponent: 7bfb43f683d8b52530ad7284cb61e47ba9a4bb6e
+  MTCategoryComponent: 354db79c28c5af888ee84f1fb239c47fe1dfd3af
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
 
-PODFILE CHECKSUM: 5bbb9cb352d7443aaffd5e5c765639cbf5660cdc
+PODFILE CHECKSUM: 7986b9833497d370016284a573367d3af48e6b76
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0

@@ -63,6 +63,7 @@ TODO: Add long description of the pod here.
      ss.subspec 'UIView' do |sss|
          sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIView/*.{h,m}'
          sss.dependency  'MTCategoryComponent/UIKit/UIColor'
+         sss.dependency 'Masonry'
       end
      
      ss.subspec 'UIImage' do |sss|

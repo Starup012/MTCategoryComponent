@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		061E229525C0EDF03567C60C /* Pods-MTCategoryComponent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCategoryComponent_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTCategoryComponent_Example/Pods-MTCategoryComponent_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1655DE2E00F84CF124632EC0 /* MTCategoryComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MTCategoryComponent.podspec; path = ../MTCategoryComponent.podspec; sourceTree = "<group>"; };
-		4BAF5EC0842DE7ACDE73C116 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1655DE2E00F84CF124632EC0 /* MTCategoryComponent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MTCategoryComponent.podspec; path = ../MTCategoryComponent.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4BAF5EC0842DE7ACDE73C116 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4F1E30AE24FE674C5BB4BA26 /* Pods_MTCategoryComponent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTCategoryComponent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* MTCategoryComponent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTCategoryComponent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,7 +64,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F1D515167C997A612442852 /* Pods-MTCategoryComponent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCategoryComponent_Example.release.xcconfig"; path = "Target Support Files/Pods-MTCategoryComponent_Example/Pods-MTCategoryComponent_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DD1E279C43225C37AAA3C0D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DD1E279C43225C37AAA3C0D4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EAA5E0AB81C6E13C7E0671D7 /* Pods-MTCategoryComponent_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCategoryComponent_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MTCategoryComponent_Tests/Pods-MTCategoryComponent_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED3AFCFAF2CF74DC03C362AC /* Pods-MTCategoryComponent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTCategoryComponent_Tests.release.xcconfig"; path = "Target Support Files/Pods-MTCategoryComponent_Tests/Pods-MTCategoryComponent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				EAA5E0AB81C6E13C7E0671D7 /* Pods-MTCategoryComponent_Tests.debug.xcconfig */,
 				ED3AFCFAF2CF74DC03C362AC /* Pods-MTCategoryComponent_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,14 +302,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MTCategoryComponent_Example/Pods-MTCategoryComponent_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MTCategoryComponent/MTCategoryComponent.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTCategoryComponent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
