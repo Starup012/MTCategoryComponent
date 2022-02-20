@@ -28,5 +28,5 @@ Github : https://github.com/lyleLH
 
 #import "MTFoundationCategoryHeader.h"
 #import "MTUIKitExtensionHeader.h"
-
+#import "NSObject+ProgessHUD.h"
 #endif /* MTCategoryComponentHeader_h */

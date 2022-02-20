@@ -24,31 +24,16 @@ Github : https://github.com/lyleLH
 
 @implementation UIViewController (MTHud)
 
-- (void)mt_showTextHUD {
-    
+- (void)mt_hideHUD {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
-- (void)showHUD {
+
+- (void)mt_showHUD {
     
-    MBProgressHUD * hud  = [[MBProgressHUD alloc] initWithView:self.view];
-    hud.mode = MBProgressHUDModeIndeterminate;
-    hud.mode = MBProgressHUDModeText;
-    hud.progress = 0.5;
-    hud.animationType = MBProgressHUDAnimationZoom;
-
-    hud.completionBlock = ^{
-        NSLog(@"completionBlock");
-    };
-
-    if(MBProgressHUDModeIndeterminate ==  hud.mode){
-
-    }else if(MBProgressHUDModeText ==  hud.mode){
-//        hud.detailsLabel.text = @"detailsLabelText";
-    }
-    [self.view addSubview:hud];
-//    [hud showAnimated:YES];
-    [hud performSelector:@selector(hideAnimated:) withObject:@(YES) afterDelay:1.5];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
 }
+
 
 
 @end

@@ -84,5 +84,11 @@ TODO: Add long description of the pod here.
       
   end
 
-  
+ s.subspec 'MBProgessHUD' do |ss|
+    
+         ss.source_files = 'MTCategoryComponent/Classes/MBProgessHUD/*.{h,m}'
+         ss.dependency  'MTCategoryComponent/UIKit'
+         ss.dependency 'Masonry'
+ end
+
 end
