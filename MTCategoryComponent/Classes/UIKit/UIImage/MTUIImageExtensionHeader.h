@@ -9,5 +9,5 @@
 #define MTUIImageExtensionHeader_h
 
 #import "UIImage+MTExtension.h"
-
+#import "UIImage+Custom.h"
 #endif /* MTUIImageExtensionHeader_h */

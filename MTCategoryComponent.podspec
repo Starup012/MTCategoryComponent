@@ -81,7 +81,15 @@ TODO: Add long description of the pod here.
      ss.subspec 'UIResponder' do |sss|
          sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIResponder/*.{h,m}'
       end
-      
+     
+     ss.subspec 'UIWindow' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIWindow/*.{h,m}'
+      end
+     
+     ss.subspec 'UIBarButtonItem' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIBarButtonItem/*.{h,m}'
+      end
+     
   end
 
  s.subspec 'MBProgessHUD' do |ss|
