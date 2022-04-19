@@ -11,8 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIResponder (MTExtension)
 
--(void)mt_passEventName:(NSString *)eventName fromObject:(id )obj withUserInfo:(NSDictionary *)userInfo ;
+@property(nonatomic,weak) id nr_eventDelegate;
 
+-(void)mt_passEventName:(NSString *)eventName fromObject:(id )obj withUserInfo:(NSDictionary *)userInfo ;
 @end
 
 NS_ASSUME_NONNULL_END

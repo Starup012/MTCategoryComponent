@@ -24,7 +24,10 @@
 
 #import "MTUIViewControllerExtensionHeader.h"
 
+#import "UIBarButtonItem+Extension.h"
 
+#import "UIWindow+JXSafeArea.h"
 
+#import "UIResponder+MTExtension.h"
 
 #endif /* MTUIKitExtensionHeader_h */

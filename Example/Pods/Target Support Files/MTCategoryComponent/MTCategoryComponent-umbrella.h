@@ -32,7 +32,6 @@
 #import "MTUIImageViewExtensionHeader.h"
 #import "UIImageView+MTEvent.h"
 #import "UIResponder+MTExtension.h"
-#import "UIResponder+NextResponder.h"
 #import "MTUITableViewExtensionHeader.h"
 #import "MTUITextFieldExtensionHeader.h"
 #import "MTUIViewExtensionHeader.h"
