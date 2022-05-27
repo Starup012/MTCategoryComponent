@@ -27,5 +27,30 @@
     return statusBarHeight + 44;
 }
 
+- (CGFloat)jx_navigationBottom {
+    CGFloat statusBarHeight = [self jx_layoutInsets].top;
+    return statusBarHeight + 44;
+}
+
++ (UIWindow *)jx_mainWindow {
+    UIWindow *win = [[UIApplication sharedApplication] delegate].window;
+    return win ? win : [UIApplication sharedApplication].keyWindow;
+}
+
++ (UIEdgeInsets)jx_layoutInsets {
+    return self.jx_mainWindow.jx_layoutInsets;
+}
+
++ (CGFloat)jx_safeAreaBottom {
+    return self.jx_layoutInsets.top;
+}
+
++ (CGFloat)jx_navigationHeight {
+    return self.jx_mainWindow.jx_navigationHeight;
+}
+
++ (CGFloat)jx_navigationBottom {
+    return self.jx_mainWindow.jx_navigationBottom;
+}
 
 @end

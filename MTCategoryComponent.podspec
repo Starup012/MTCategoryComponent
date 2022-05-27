@@ -51,6 +51,9 @@ TODO: Add long description of the pod here.
      ss.subspec 'UIControl' do |sss|
          sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIControl/*.{h,m}'
       end
+     ss.subspec 'UIFont' do |sss|
+         sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIFont/*.{h,m}'
+      end
      ss.subspec 'UIImageView' do |sss|
          sss.source_files = 'MTCategoryComponent/Classes/UIKit/UIImageView/*.{h,m}'
       end

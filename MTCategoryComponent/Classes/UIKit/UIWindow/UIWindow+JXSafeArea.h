@@ -13,8 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIWindow (JXSafeArea)
 
 - (UIEdgeInsets)jx_layoutInsets;
-
 - (CGFloat)jx_navigationHeight;
+- (CGFloat)jx_navigationBottom;
+
++ (UIEdgeInsets)jx_layoutInsets;
++ (CGFloat)jx_safeAreaBottom;
++ (CGFloat)jx_navigationHeight;
++ (CGFloat)jx_navigationBottom;
 
 @end
 
