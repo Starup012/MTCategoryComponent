@@ -70,7 +70,13 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param image 需要缩放的图片
 + (UIImage *)mt_fitScreenWithImage:(UIImage *)image;
 
-
+/**
+ 图片添加均匀模糊
+ 
+ @discussion 图片添加均匀模糊， 区别于高斯模糊， 能够保证模糊参数过大的时候，图片边缘不虚化
+ @param blur 模糊系数
+ */
+- (UIImage *)stBlurNumber:(CGFloat)blur;
 @end
 
 NS_ASSUME_NONNULL_END
