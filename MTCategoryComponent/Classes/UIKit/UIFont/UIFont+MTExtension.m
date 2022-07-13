@@ -57,4 +57,54 @@
     
     return fontName;
 }
+
++ (NSArray<NSString *> *)mtFilterFontFilesWithBundle:(NSBundle *)fontBundle fileTypes:(NSArray<NSString *>*)typeArr includeDefaultType:(BOOL)includeFlag {
+    NSMutableArray<NSString *> * pathes = [NSMutableArray new];
+    
+    NSMutableSet<NSString *> *typeUse = [NSMutableSet new];
+    [typeUse addObjectsFromArray:typeArr];
+    
+    if (includeFlag == YES) {
+        [typeUse addObjectsFromArray:@[@"ttf", @"tif"]];
+    }
+    
+    [typeUse enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, BOOL * _Nonnull stop) {
+        NSArray<NSString *> *pathArr = [fontBundle pathsForResourcesOfType:obj inDirectory:nil];
+        [pathes addObjectsFromArray:pathArr];
+    }];
+    
+    return pathes;
+}
+
++ (NSArray<NSString *> *)mtLoadFontWithBundle:(NSBundle *)fontBundle fileTypes:(NSArray<NSString *>*)typeArr includeDefaultType:(BOOL)includeFlag error:(NSError *_Nullable *_Nullable)err {
+    NSArray<NSString *> * pathes = [self mtFilterFontFilesWithBundle:fontBundle fileTypes:typeArr includeDefaultType:includeFlag];
+    
+    NSMutableArray<NSString *> *fontNames = [NSMutableArray new];
+    NSMutableArray<NSString *> *errMsgs = [NSMutableArray new];
+    [pathes enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSError *err = nil;
+       NSString * oneName = [self mtLoadFontsWithFilePath:obj err:&err];
+        if (err) {
+            NSString *msg = err.userInfo[NSLocalizedDescriptionKey];
+            msg.length > 0 ? [errMsgs addObject:msg] : 0;
+        } else {
+            if (oneName.length) {
+                [fontNames addObject:oneName];
+            }
+        }
+    }];
+    
+    if (errMsgs.count > 0 && err) {
+        NSMutableString *ms = [NSMutableString new];
+        [errMsgs enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [ms appendString:obj];
+            [ms appendString:@"\n"];
+        }];
+       *err = [self createError:ms];
+    }
+    
+    NSLog(@"font pathes:%@", pathes);
+    NSLog(@"font names:%@", fontNames);
+    return fontNames;
+}
 @end
